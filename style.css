@@ -1,0 +1,102 @@
+.navbar-nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .navbar-nav li a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    /* background-color: blue; */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-nav li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  /* .navbar-nav.ml-auto {
+      margin-left: 430px; 
+      
+  } */
+  .navbar-nav.ml-auto.d-flex {
+    flex-direction: row;
+    /* align-items: center; */
+    /* margin-left: 430px;  */
+
+}
+
+.navbar-nav.ml-auto.d-flex .nav-item {
+    margin-right: 10px; /* Adjust the value as per your desired spacing */
+}
+  
+  .navbar-nav.ml-id{
+   margin-right: 280px;   
+  }
+  
+  body {
+      background-color: black;
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }  
+/* ///////////////////////////////////// */
+    #home {
+        height: 100vh;
+        
+        background-color: black;
+        
+    }
+    
+    #about {
+        height: 100vh;
+        background-color: #00ff00; /* Green */
+    }
+    
+    #albums {
+        height: 100vh;
+        background-color: #0000ff; /* Blue */
+    }
+    
+    #events {
+        height: 100vj;
+        background-color: #ffff00; /* Yellow */
+    }
+    
+    #gallery {
+        height: 100vh;
+        background-color: #ff00ff; /* Magenta */
+    }
+    
+    #blog {
+        height: 100vh;
+        background-color: #00ffff; /* Cyan */
+    }
+    
+    #contact {
+        height: 100vh;
+        background-color: #ffa500; /* Orange */
+    }
+
+     .navbar-nav.ml-id .nav-link:hover {
+        background-image: linear-gradient(to right, red, orange, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } 
+    
+    .navbar-nav.ml-id .nav-item .nav-link:hover {
+        color: orange; /* Change to your desired color */
+    }
+    .carousel-item.img{
+        opacity: 3; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
